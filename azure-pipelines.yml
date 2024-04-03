@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  self: LA-x86-31-93
+  name: LA
+  demands:
+  - agent.name -equals LA-x86-31-93
 
 steps:
 - script: echo Hello, world!
